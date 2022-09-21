@@ -51,8 +51,9 @@
         </div>
 
         <div class="Rooster">
-            <h1><a name="Rooster"></a> Rooster</h1>
+            <h1><a name="Rooster"></a>Rooster</h1>
             <p></p>
+        </div>
     </section>
 </div>
 
