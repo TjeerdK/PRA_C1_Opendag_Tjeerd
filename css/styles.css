@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 .homepage{
     background-color: gray;
 }
 .nav{
-    width: 98%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +46,6 @@
     opacity: 0.5;
   }
 .bannerInfo{
-    
     opacity: 1;
     color: white;
     position: absolute;
@@ -55,52 +55,95 @@
     justify-content: right;
     margin-left: 62%;
 }
-
+.NavItem{
+    position: relative;
+}
+.NavItem::before{
+    transform: scaleX(0);
+  transform-origin: bottom right;
+}
+ 
+.NavItem:hover::before{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+  opacity: 100;
+}
+.NavItem::before{
+    opacity: 100;
+    content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #68bbd9;
+  z-index: -1;
+  transition: transform .3s ease;
+}
 .infoAnkers a{
     color: black;
     text-decoration: none;
     font-size: 175%;
     font-weight: bolder;
     padding: 5% 0%;
-    padding-bottom: 5px;
-    border-bottom: 5px solid hidden ;
 }
 .infoAnkers a:hover{
-    border-bottom: 5px solid white;
-    padding-bottom: 0px;
     opacity: 0.5;
     
 }
 .infoAnkers{
     display: flex;
     flex-direction: column;
+    position: relative;
+    opacity: 100;
 }
 .Information{
     width: 100%;
     opacity: 0.8;
-    background-color: #9535f9;
-    height: 200vh;
-}
-.Vakken{
-    width: 100%;
+    background-color: #7E6B8F;
+    height: 100vh;
+    padding: 5% 0% 0% 10%;
     color: white;
-}
-.Vakken h1{
-    font-size: 250%;
-}
-.Vakken h3{
-    font-weight: 400;
-    font-size: 150%;
 }
 
-.Rooster{
-    width: 100%;
-    color: white;
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1%;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 3% 0% 0% 3%;
+    font-size: larger;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 2% 1%;
+    background-color: #7E6B8F;
+    display: none;
+    overflow: hidden;
+    width: 50%;
+    margin: 0% 0% 0% 3%;
+  }
+.CarouselItem{
+    max-width: 20%;
+    min-width: 100%;
 }
-.Rooster h1{
-    font-size: 250%;
+
+.docenten_img{
+    max-width: 75%;
+    min-width: 75%;
+    align-self: center;
 }
-.Rooster p{
-    font-weight: 400;
-    font-size: 150%;
-}
+
