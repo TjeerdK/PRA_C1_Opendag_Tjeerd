@@ -6,7 +6,7 @@
   <title>HomePage</title>
 
   <link rel="stylesheet" href="css/styles.css">
-
+<meta content="width=device-width, initial-scale=1" name="viewport" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -29,17 +29,13 @@
         <div class="bannerInfo">
             <div class="infoFiler">
             </div>
-            <div class="infoAnkers">
-                
+            <div class="infoAnkers">        
                 <a href="#Vakken" class="NavItem" id="Test">Vakken</a>
                 <a href="#Rooster" class="NavItem" id="Test">Rooster</a>
                 <a href="#Blokken" class="NavItem" id="Test">Blokken</a>
                 <a href="#Versnellen" class="NavItem" id="Test">Versnellen</a>
                 <a href="#Docenten" class="NavItem" id="Test">Docenten</a>
-                <!-- <h1><a name="Vakken"></a>TOP</h1>
-                <h1><a name="Rooster"></a>TOP</h1>
-                <h1><a name="Blokken"></a>TOP</h1>
-                <h1><a name="Versnellen"></a>TOP</h1> -->
+                <a href="#Kosten" class="NavItem" id="Test">Kosten</a>
             </div>
         </div>
     </div>
@@ -51,20 +47,20 @@
                 $Vakken = ['Nederlands', 'Engels', 'Rekenen', 'Webdevelopment', 'Native', 'Praktijk', 'Praktijk ondersteuning'];
                 foreach ($Vakken as $Vak) {
                     //list-group-item
-                    echo "<p >$Vak</p>";
+                    echo "<h3>$Vak</h3>";
                 }
             ?>   
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel numquam assumenda, provident repellendus sit, ipsam impedit tempore, atque modi ab in cum consequatur! Vero dolorem quidem eum dolorum fuga corrupti perferendis, dolores labore neque sit alias, tempora iusto impedit recusandae nesciunt. Pariatur magnam aliquid veritatis animi dolorem nobis neque! Odio?</p>
+            <p>Het rooster zal in het eerste jaar in iederegeval deze vakken bevatten. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eaque debitis eos porro fuga doloribus, explicabo at modi dolorum facere animi cum error velit facilis reiciendis ex maiores odio exercitationem? Quae id sint accusamus iste ratione magnam, recusandae officiis sunt. Exercitationem, sint non? Sapiente minima numquam, suscipit deserunt distinctio reprehenderit.</p>
             </div>         
         </div>
-
+        <!-- Kopje over Roosters -->
         <div class="Rooster">
             <button class="accordion"><a name="Rooster"></a> Rooster</button>
             <div class="panel">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ut autem vel minus odio, facere debitis ab blanditiis nulla sapiente mollitia expedita optio omnis impedit perferendis animi reiciendis labore fuga eum voluptatibus deleniti aperiam obcaecati pariatur fugit? Et nisi ducimus, autem odit iusto deserunt tempora quas inventore quibusdam distinctio illo fugiat nesciunt labore tempore? Quos iure dolore, necessitatibus unde in dicta est voluptate quia fuga alias voluptates dolor optio vitae? Modi iure harum commodi? Ullam repellat quam, quaerat accusantium adipisci ratione maxime. Dolorum magni, sequi nam doloribus tenetur doloremque cupiditate quam ullam, adipisci veritatis, consequuntur beatae asperiores porro unde omnis!</p>
             </div>
         </div>
-
+        <!-- Kopje over Blokken -->
         <div class="Blokken">
             <button class="accordion"><a name="Blokken"></a> Blokken</button>
             <div class="panel">
@@ -72,43 +68,43 @@
             </div>
 
         </div>
+        <!-- Kopje over Versnellen -->
         <div class="versnellen">
             <button class="accordion"><a name="Versnellen"></a> Versnellen</button>
             <div class="panel">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, rerum omnis, consequatur sed nihil eum corrupti nesciunt sit iure dicta voluptate eligendi fugit velit quo, mollitia ducimus. Exercitationem totam fuga inventore numquam? Blanditiis, tenetur quae! Quod iure dolores enim voluptates eveniet nihil dolor veritatis delectus vero blanditiis natus voluptatem, soluta eius vel sunt ullam laborum perferendis quis deserunt magni quidem debitis? Hic rerum neque odio? Quis corrupti cumque deleniti odit illum dolore ducimus dicta placeat ut nostrum voluptatem incidunt saepe, temporibus perferendis! Amet ullam nostrum, ea itaque nihil voluptates minima consectetur est commodi, voluptate dolores ab aspernatur harum aperiam vero.</p>
             </div>
         </div>
+        <!-- Kopje over Docenten -->
         <div class="Docenten">
             <button class="accordion"><a name="Docenten"></a> Docenten</button>
-            
-                <div class="panel">
+            <div class="panel">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eum, doloribus dolorum vitae exercitationem debitis eaque fugit ex. Ea quis dolor rem voluptate sapiente temporibus tempore repellat nihil. Fuga possimus, dolorem minima amet hic perspiciatis fugiat qui? Debitis, illo veritatis. Asperiores cupiditate doloremque sit, incidunt beatae et voluptatibus corrupti enim.</p>
-
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" >
-                                <img class="d-block docenten_img" src="img/docenten/corne.png" alt="Second slide">
-                            </div>
-                                <?php
-                                $files = glob('img/docenten/*.{jpg,png,gif}', GLOB_BRACE);
-                                foreach($files as $file) {
-                                echo "<div class='carousel-item '>";
-                                echo  "<img class='d-block docenten_img' src='$file' alt='First slide'>";
-                                echo "</div>";
-                                }
-                                ?>   
-                        </div> 
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" >
+                            <img class="d-block docenten_img" src="img/docenten/corne.png" alt="Second slide">
+                        </div>
+                            <?php
+                            $files = glob('img/docenten/*.{jpg,png,gif}', GLOB_BRACE);
+                            foreach($files as $file) {
+                            echo "<div class='carousel-item '>";
+                            echo  "<img class='d-block docenten_img' src='$file' alt='First slide'>";
+                            echo "</div>";
+                            } ?>   
+                    </div> 
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+            </div>
         </div>
+        <!-- Kopje over Kosten -->
         <div class="Kosten">
             <button class="accordion"><a name="Kosten"></a> Kosten</button>
             <div class="panel">
